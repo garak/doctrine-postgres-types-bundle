@@ -1,0 +1,30 @@
+{
+    "name": "garak/doctrine-postgres-types-bundle",
+    "description": "Symfony bundle for Postgresql types",
+    "keywords": ["symfony", "bundle", "postgres", "doctrine"],
+    "homepage": "https://massimilianoarione.it",
+    "type": "symfony-bundle",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Massimiliano Arione",
+            "email": "garakkio@gmail.com"
+        }
+    ],
+    "require": {
+        "opensoft/doctrine-postgres-types": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Garak\\DoctrinePostgresTypesBundle\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
