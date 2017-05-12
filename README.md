@@ -6,9 +6,9 @@ This bundle is for using [Doctrine Postgres Types](https://github.com/opensoft/d
 Documentation
 -------------
 
-[Read the documentation](Resources/doc/index.md)
+[Read the documentation](doc/index.md)
 
 License
 -------
 
-This bundle is released under the LGPL license. See the [complete license text](Resources/meta/LICENSE).
+This bundle is released under the LGPL license. See the [complete license text](LICENSE).
