@@ -25,16 +25,16 @@ class DoctrinePostgresTypesExtension extends Extension implements PrependExtensi
      */
     public function prepend(ContainerBuilder $container)
     {
-        $config = array(
-            'dbal' => array('types' => array(
+        $config = [
+            'dbal' => ['types' => [
                 'text_array' => 'Doctrine\DBAL\PostgresTypes\TextArrayType',
                 'int_array' => 'Doctrine\DBAL\PostgresTypes\IntArrayType',
                 'tsvector' => 'Doctrine\DBAL\PostgresTypes\TsvectorType',
                 'tsquery' => 'Doctrine\DBAL\PostgresTypes\TsqueryType',
                 'xml' => 'Doctrine\DBAL\PostgresTypes\XmlType',
                 'inet' => 'Doctrine\DBAL\PostgresTypes\InetType',
-            )),
-        );
+            ]],
+        ];
         $container->prependExtensionConfig('doctrine', $config);
     }
 }
