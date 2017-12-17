@@ -10,5 +10,6 @@ class DoctrinePostgresTypesBundleTest extends TestCase
     public function testConstruct()
     {
         $bundle = new DoctrinePostgresTypesBundle();
+        $this->assertInstanceOf(DoctrinePostgresTypesBundle::class, $bundle);
     }
 }
