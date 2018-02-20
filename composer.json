@@ -4,7 +4,7 @@
     "keywords": ["symfony", "bundle", "postgres", "doctrine"],
     "homepage": "https://massimilianoarione.it",
     "type": "symfony-bundle",
-    "license": "LGPL-3.0",
+    "license": "LGPL-3.0-or-later",
     "authors": [
         {
             "name": "Massimiliano Arione",
@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
+        "php": "^7.0",
         "opensoft/doctrine-postgres-types": "^1.2",
         "symfony/config": "^2.8.18 || ^3.3 || ^4.0",
         "symfony/dependency-injection": "^2.8.18 || ^3.3 || ^4.0",
