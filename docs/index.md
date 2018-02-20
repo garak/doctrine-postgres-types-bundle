@@ -9,16 +9,16 @@ Run from terminal:
 $ composer require garak/doctrine-postgres-types-bundle
 ```
 
-Enable bundle in the kernel:
+Unless you're using Flex, enable bundle in the kernel:
 
 ```php
 <?php
 // app/AppKernel.php
 public function registerBundles()
 {
-    $bundles = array(
+    $bundles = 
         // ...
         new Garak\DoctrinePostgresTypesBundle\DoctrinePostgresTypesBundle(),
-    );
+    ];
 }
 ```

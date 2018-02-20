@@ -8,7 +8,7 @@ This bundle is for using [Doctrine Postgres Types](https://github.com/opensoft/d
 Documentation
 -------------
 
-[Read the documentation](doc/index.md)
+[Read the documentation](docs/index.md)
 
 License
 -------
