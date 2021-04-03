@@ -6,10 +6,11 @@ $finder = PhpCsFixer\Finder::create()
 ;
 
 return PhpCsFixer\Config::create()
+    ->setRiskyAllowed(true)
     ->setRules([
         '@Symfony' => true,
-        'array_syntax' => ['syntax' => 'short'],
-        'ordered_imports' => true,
+        '@Symfony:risky' => true,
+        '@PHP71Migration:risky' => true,
     ])
     ->setFinder($finder)
 ;

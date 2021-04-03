@@ -2,35 +2,32 @@
 
 namespace Garak\DoctrinePostgresTypesBundle\DependencyInjection;
 
+use Doctrine\DBAL\PostgresTypes\InetType;
+use Doctrine\DBAL\PostgresTypes\IntArrayType;
+use Doctrine\DBAL\PostgresTypes\TextArrayType;
+use Doctrine\DBAL\PostgresTypes\TsqueryType;
+use Doctrine\DBAL\PostgresTypes\TsvectorType;
+use Doctrine\DBAL\PostgresTypes\XmlType;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-/**
- * DoctrinePostgresTypesExtension.
- */
-class DoctrinePostgresTypesExtension extends Extension implements PrependExtensionInterface
+final class DoctrinePostgresTypesExtension extends Extension implements PrependExtensionInterface
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function prepend(ContainerBuilder $container)
+    public function prepend(ContainerBuilder $container): void
     {
         $config = [
             'dbal' => ['types' => [
-                'text_array' => 'Doctrine\DBAL\PostgresTypes\TextArrayType',
-                'int_array' => 'Doctrine\DBAL\PostgresTypes\IntArrayType',
-                'tsvector' => 'Doctrine\DBAL\PostgresTypes\TsvectorType',
-                'tsquery' => 'Doctrine\DBAL\PostgresTypes\TsqueryType',
-                'xml' => 'Doctrine\DBAL\PostgresTypes\XmlType',
-                'inet' => 'Doctrine\DBAL\PostgresTypes\InetType',
+                'text_array' => TextArrayType::class,
+                'int_array' => IntArrayType::class,
+                'tsvector' => TsvectorType::class,
+                'tsquery' => TsqueryType::class,
+                'xml' => XmlType::class,
+                'inet' => InetType::class,
             ]],
         ];
         $container->prependExtensionConfig('doctrine', $config);

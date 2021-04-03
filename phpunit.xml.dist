@@ -12,4 +12,8 @@
             <directory>./src</directory>
         </whitelist>
     </filter>
+    <!-- see https://www.tomasvotruba.cz/blog/2019/03/28/how-to-mock-final-classes-in-phpunit/ -->
+    <extensions>
+        <extension class="Garak\DoctrinePostgresTypesBundle\Tests\BypassFinalHook"/>
+    </extensions>
 </phpunit>

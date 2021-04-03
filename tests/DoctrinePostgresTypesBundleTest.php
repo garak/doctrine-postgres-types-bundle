@@ -5,11 +5,11 @@ namespace Garak\DoctrinePostgresTypesBundle\Tests;
 use Garak\DoctrinePostgresTypesBundle\DoctrinePostgresTypesBundle;
 use PHPUnit\Framework\TestCase;
 
-class DoctrinePostgresTypesBundleTest extends TestCase
+final class DoctrinePostgresTypesBundleTest extends TestCase
 {
-    public function testConstruct()
+    public function testConstruct(): void
     {
         $bundle = new DoctrinePostgresTypesBundle();
-        $this->assertInstanceOf(DoctrinePostgresTypesBundle::class, $bundle);
+        self::assertInstanceOf(DoctrinePostgresTypesBundle::class, $bundle);
     }
 }
