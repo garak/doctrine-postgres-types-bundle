@@ -6,7 +6,7 @@ Doctrine Postgres Type Bundle
 Run from terminal:
 
 ```bash
-$ composer require garak/doctrine-postgres-types-bundle
+composer require garak/doctrine-postgres-types-bundle
 ```
 
 Unless you're using Flex, enable bundle in the kernel:
